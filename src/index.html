@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="/build/fb-msg-slide.esm.js"></script>
+  <script nomodule src="/build/fb-msg-slide.js"></script>
+<style>
+  .wrapper{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    max-width: 1300px;
+  }
+  .wrapper .col{
+    display: block;
+    flex: none;
+    width: 36%;
+    margin-left: 30%;
+    padding: 0.75rem;
+  }
+
+.col .block{
+  position: relative;
+
+}
+  .__item{
+    padding: 0 10px;
+    background-color: #fff;
+    width: 30px;
+    /* margin-right: 15px; */
+  }
+  .__item._middle img{
+    width: 36px;
+    height: 36px;
+    border-radius: 290486px;
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 450px) {
+  body {
+    margin: 0;
+  }
+ .wrapper .col{
+   width: 100%;
+   margin-left: 0;
+   padding: 0;
+ }
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="col">
+    <div class="block">
+      <fb-msg-slide>
+        <div slot="item-start" >
+         <span class="fa fa-eye"></span>
+
+        </div>
+        <div slot="item-middle" class="_middle" >
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+         <p><strong>M.John</strong><br>Lorem ipsum dolor sit.</p>
+        </div>
+        <div slot="item-end" >
+          <span class="fa fa-trash"></span>
+        </div>
+      
+      
+        </fb-msg-slide>
+      </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

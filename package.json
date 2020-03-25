@@ -1,6 +1,6 @@
 {
   "name": "fb-msg-slide",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A slide component with extra actions built with StencilJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -16,12 +16,12 @@
   ],
   "keywords": [
     "web component",
-		"stenciljs",
-		"component",
-		"facebook",
+    "stenciljs",
+    "component",
+    "facebook",
     "messgenger",
     "slide"
-	],
+  ],
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
